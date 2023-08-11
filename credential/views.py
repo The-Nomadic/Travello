@@ -58,4 +58,5 @@ def register(request):
 
 def logout(request):
     auth.logout(request)
-    return render(request, '/')
+    # return render(request, 'index.html')
+    return redirect('/')
